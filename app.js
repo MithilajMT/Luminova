@@ -32,5 +32,5 @@ app.use('/admin',admin_route)
 app.use(notFoundHandler,errorhandler)
 
 app.listen(port,()=>{
-    console.log(`Server started at http://localhost:${port}/admin`)
+    console.log(`Server started at http://localhost:${port}`)
 })

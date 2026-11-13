@@ -12,6 +12,8 @@ export const generateOTP = async()=>{
 }
 
 export const sentMail = async (userEmail,otp) => {
+    console.log("app mail= "+process.env.OWN_EMAIL)
+    console.log("app pass= "+process.env.OWN_APP_PASS)
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
